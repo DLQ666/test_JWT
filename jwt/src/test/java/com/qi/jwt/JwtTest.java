@@ -26,7 +26,7 @@ public class JwtTest {
 
     @Test
     public void testCheckJwt(){
-        Claims claims = JwtUtils.checkJwt("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxIiwic3ViIjoicWktdXNlciIsImlhdCI6MTU5MzkyMDg0OCwiZXhwIjoxNTkzOTIwODc4LCJpZCI6IjEwMCIsIm5pY2tuYW1lIjoiYXNkIiwiYXZhdGFyIjoicXdlLmpwZyJ9.gwG6TnUtMnZUvSDCfAGZLtiRYya_FswuNRr_yw-wptg");
+        Claims claims = JwtUtils.checkJwt("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwMCIsIm5pY2tuYW1lIjoiYXNkIiwiYXZhdGFyIjoicXdlLmpwZyIsInN1YiI6InFpLXVzZXIiLCJpc3MiOiJkbHFrOHMiLCJhdWQiOiJkbHFrOHMiLCJpYXQiOjE2MTc3MDAxNjcsImV4cCI6MTYxNzcwMDE5NywibmJmIjoxNjE3NzAwMTg3LCJqdGkiOiIxIn0.LaiwsnU5eyPnitTpU_04MlsBdecVWtAoU-74HfOgmgI");
         String id = (String) claims.get("id");
         String nickname = (String) claims.get("nickname");
         String avatar = (String) claims.get("avatar");
